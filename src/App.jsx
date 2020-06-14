@@ -62,7 +62,8 @@ function App() {
           <div className="row">
             <div className="col-12 col-md-6">
               <h3 className="text-uppercase text-center section-heading">
-                Work Experience (5 Years)
+                Work Experience
+                <sup className="workex-years p-2">(5 Years)</sup>
               </h3>
               <hr className="section-border" />
               {RESUME_DETAIL.workExperiences.map(workExp => {
