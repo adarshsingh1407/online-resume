@@ -1,38 +1,101 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-black {
+  background-color: #252525;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.heading {
+  font-family: glacial-regular-bold;
+  font-size: 3.5rem;
+}
+
+.sub-heading {
+  font-family: montserrat-semi-bold;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.heading-position {
+  font-family: glacial-regular;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: #000000;
+}
+
+.contact-info {
+  font-family: glacial-regular;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.contact-action,
+.contact-action:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .heading,
+  .sub-heading,
+  .heading-position,
+  .contact-info {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .heading-position {
+    border-top: 0.1rem solid #000;
+    padding-top: 2rem;
   }
+}
+
+@media (min-width: 768px) {
+  .heading-position {
+    border-right: 0.2rem solid #000;
+  }
+}
+
+.section-heading {
+  font-family: montserrat-semi-bold;
+  font-size: 1.2rem;
+  color: #47bec9;
+}
+
+.section-border {
+  border-bottom: 2px solid #47bec9;
+}
+
+.company-name {
+  font-family: glacial-regular-bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.job-title {
+  font-family: montserrat-semi-bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.exp-details {
+  border-top: 1px solid #47bec9;
+}
+
+.custom-card-header {
+  padding: 15px 10px 0px 10px;
+  margin: 0px 5px 0px 5px;
+  font-size: 0.9rem;
+}
+
+.card-header-left {
+  border-left: 2px solid #47bec9;
+}
+
+.card-header-right {
+  border-right: 2px solid #47bec9;
+}
+
+.start-date {
+  border-bottom: 1px solid #47bec9;
 }

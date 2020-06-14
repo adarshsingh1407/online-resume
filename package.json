@@ -4,15 +4,25 @@
   "private": true,
   "homepage": "https://adarshsingh1407.github.io/online-resume",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-regular-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.10",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.5.0",
     "gh-pages": "^3.0.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.10",
+    "lodash": "^4.17.15",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "source-map-explorer": "^2.4.2"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -20,7 +30,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "prettier": {
     "trailingComma": "es5",
@@ -39,7 +50,6 @@
       "plugin:prettier/recommended"
     ],
     "rules": {
-      "additional-rule": "warn",
       "prettier/prettier": "error"
     }
   },

@@ -1,0 +1,10 @@
+// Override default variables before the import
+$primary: #47bec9;
+$enable-rounded: false;
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 2rem 2rem;
+  }
+}
