@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
+import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip } from 'recharts'
 import { RESUME_DETAIL } from '../../constants'
 
 const COLORS = [
@@ -18,7 +18,7 @@ export default class SkillsDistribution extends PureComponent {
       value: skill.value,
     }))
     return (
-      <div style={{ width: '100%', height: 300 }}>
+      <div style={{ width: '100%', height: 250 }}>
         <ResponsiveContainer>
           <PieChart>
             <Pie
@@ -28,7 +28,7 @@ export default class SkillsDistribution extends PureComponent {
               outerRadius={80}
               paddingAngle={5}
               label={pieData => {
-                return `${pieData.name} ${pieData.value}%`
+                return `${pieData.name}`
               }}
             >
               {data.map((entry, index) => (
@@ -38,6 +38,7 @@ export default class SkillsDistribution extends PureComponent {
                 />
               ))}
             </Pie>
+            <Tooltip formatter={value => `${value}%`} />
           </PieChart>
         </ResponsiveContainer>
       </div>

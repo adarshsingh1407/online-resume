@@ -94,7 +94,7 @@ export const RESUME_DETAIL = {
       value: 10,
     },
     {
-      name: 'AngularJS',
+      name: 'Angular',
       value: 5,
     },
     {
