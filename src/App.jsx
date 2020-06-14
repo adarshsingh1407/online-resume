@@ -8,6 +8,7 @@ import { RESUME_DETAIL, TOP_SKILLS_LIMIT } from './constants'
 import Academics from './components/Academics'
 import Project from './components/Project'
 import Blog from './components/Blog'
+import SkillsDistribution from './components/SkillsDistribution/SkillsDistribution'
 
 function App() {
   const {
@@ -76,18 +77,23 @@ function App() {
         <div className="container-xl">
           <div className="row">
             <div className="col-12 col-md-6">
-              <h3 className="text-uppercase text-center section-heading">
-                Work Experience
-                <sup className="workex-years p-2">(5 Years)</sup>
-              </h3>
-              <hr className="section-border" />
-              {workExperiences.map(workExp => {
-                return (
-                  <WorkExperience key={workExp.startDate} workExp={workExp} />
-                )
-              })}
-            </div>
-            <div className="col-12 col-md-6">
+              <div className="row">
+                <div className="col-12">
+                  <h3 className="text-uppercase text-center section-heading">
+                    Work Experience
+                    <sup className="workex-years p-2">(5 Years)</sup>
+                  </h3>
+                  <hr className="section-border" />
+                  {workExperiences.map(workExp => {
+                    return (
+                      <WorkExperience
+                        key={workExp.startDate}
+                        workExp={workExp}
+                      />
+                    )
+                  })}
+                </div>
+              </div>
               <div className="row">
                 <div className="col-12">
                   <h3 className="text-uppercase text-center section-heading">
@@ -104,6 +110,8 @@ function App() {
                   })}
                 </div>
               </div>
+            </div>
+            <div className="col-12 col-md-6">
               <div className="row">
                 <div className="col-12">
                   <h3 className="text-uppercase text-center section-heading">
@@ -130,6 +138,9 @@ function App() {
                             )
                           })}
                         </div>
+                      </div>
+                      <div className="col-12">
+                        <SkillsDistribution skills={skills} />
                       </div>
                     </div>
                   </div>
