@@ -61,6 +61,10 @@
   }
 }
 
+.heading-position > div:not(:first-child) {
+  padding-top: 0.25rem;
+}
+
 .section-heading {
   font-family: montserrat-semi-bold;
   font-size: 1.2rem;
@@ -102,6 +106,31 @@
   border-right: 2px solid #47bec9;
 }
 
-.start-date {
-  border-bottom: 1px solid #47bec9;
+.card-header-right a,
+.card-header-right a:hover {
+  color: #ffffff;
+}
+
+.start-date,
+.end-date {
+  color: #ffffff;
+}
+
+.end-date {
+  border-top: 1px solid #47bec9;
+}
+
+.top-skills-label {
+  font-family: montserrat-semi-bold;
+  font-size: 1.1rem;
+  border-right: 2px solid #ffffff;
+}
+
+.skill-name {
+  font-size: 1.1rem;
+}
+
+.medium,
+.github {
+  font-size: 1.5rem;
 }

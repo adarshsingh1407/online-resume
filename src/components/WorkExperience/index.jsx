@@ -17,17 +17,17 @@ class WorkExperience extends PureComponent {
     } = this.props
     return (
       <div className="container-xl pb-3">
-        <div className="row card text-white bg-dark">
+        <div className="card text-white bg-dark">
           <div className="custom-card-header">
             <div className="row">
-              <div className="col-8 card-header-left job-title">
+              <div className="col-9 card-header-left job-title bg-black pl-2 pt-1">
                 {!isEmpty(positionLine1) && <div>{positionLine1}</div>}
                 {!isEmpty(positionLine2) && <div>{positionLine2}</div>}
               </div>
-              <div className="col-4 card-header-right">
+              <div className="col-3 card-header-right">
                 <div className="float-right">
                   <div className="start-date text-center">{startDate}</div>
-                  <div className="text-center">{endDate}</div>
+                  <div className="end-date text-center">{endDate}</div>
                 </div>
               </div>
             </div>
