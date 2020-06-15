@@ -79,15 +79,19 @@ export const RESUME_DETAIL = {
   skills: [
     {
       name: 'ReactJS',
-      value: 30,
-    },
-    {
-      name: 'NodeJS',
       value: 25,
     },
     {
       name: 'Javascript',
-      value: 25,
+      value: 20,
+    },
+    {
+      name: 'NodeJS',
+      value: 15,
+    },
+    {
+      name: 'GraphQL',
+      value: 15,
     },
     {
       name: 'HTML/CSS',

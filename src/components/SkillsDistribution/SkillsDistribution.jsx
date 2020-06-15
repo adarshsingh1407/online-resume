@@ -9,6 +9,7 @@ const COLORS = [
   '#ffc107',
   '#f4511e',
   '#90a4ae',
+  '#e0e0e0',
 ]
 
 export default class SkillsDistribution extends PureComponent {
