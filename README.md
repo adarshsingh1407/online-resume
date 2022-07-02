@@ -1,6 +1,6 @@
 ## Online Resume ##
 
 
-Open [https://adarshsingh1407.github.io/online-resume](https://adarshsingh1407.github.io/online-resume)
+Open [https://adarshsingh14.com](https://adarshsingh14.com)
 
 Last Updated On: June 2020
